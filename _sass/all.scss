@@ -3,6 +3,7 @@
 @import 'navbar';
 @import 'profile';
 @import 'page';
+@import 'dark-theme-button';
 
 .card-container {
     display: grid;
@@ -30,9 +31,13 @@
 
 
 body {
-    background-color: #f5f5f9;
-    margin-bottom: 50px;
+  background-color: #f5f5f9;
+  margin-bottom: 50px;
+  transition: background 0.8s linear;
 }
+
+
+
 h2 {
     margin-bottom: 20px;
     margin-top: 20px;
@@ -88,3 +93,8 @@ a {
         width: 100%;
     }
 }
+
+
+
+
+
