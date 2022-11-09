@@ -1,10 +1,106 @@
+
+<style>
+    .pfp{
+      border-radius: 50%;
+      width: 100px;
+      margin-bottom: 2px;
+      
+    }
+    .card-container-1 { display: grid; grid-template-columns: repeat(3, 1fr); font-family: "Open Sans", sans-serif;
+      }
+
+    .card { display: flex; flex-direction: row; align-items: center; margin: 20px 30px; background-color: white; border-radius: 20px; padding: 1.5em; font-size: 1.2em; border: black 2px;}
+
+  
+    .profile-card{
+      padding-top: 3px;
+      padding-bottom: 3px;
+      height: 230px;
+      border-radius: 20px;
+      border: black 4px;
+      box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+      transition: transform .3s;
+    }
+
+    .card-container-1 > :hover{
+      transform: translateY(5px);
+      box-shadow: 2px 2px 50px 0px rgba(0, 0, 0, 0.3);
+      cursor: pointer;
+    }
+  
+    @media (max-width: 768px){
+        .card-container-1{
+            grid-template-columns: repeat(2, 1fr);
+            text-align: justify;
+        }
+      }
+
+    .profile-card {
+      color: var(--text-color);
+      border: black;
+    }
+  
+    .profile-card .title {
+      font-size: 500;
+      font-weight: bold;
+    }
+  
+    .profile-card .location, .profile-card .description, .profile-card .author {
+      font-size: medium;
+      font-weight: 400;
+      border: black 3px;
+      
+    }
+  
+    .profile-card .dates {
+      font-size: small;
+      color: var(--date-color);
+      border: black;
+     
+    }
+  
+    .img-div{
+      display: inline-block;
+      margin: auto 10px auto auto;
+      border: 3px black;
+      text-align: center;
+    }
+  
+    .info-div{
+      display: inline-block;
+      margin: auto auto auto 10px;
+    }
+  </style>
+
 <h2>Meet the Pod</h2>
-<div class="card-container">
+<div class="card-container-1">
     {% for item in site.data.fellows %}
-    <div class="card">
-        <div class="info">
-            <p class="title"> {{ item.name }}</p>
-            <p class="location"> {{ item.location }}</p>
+      <div class="card profile-card">
+          <div class="img-div">
+            <img class="pfp" src="./assets/img/fellows/{{ item.img }}">
+          </div>
+  
+          <div class="info-div">
+            <p class="title"> <a href="/fellows/{{ item.page }}">{{ item.name }}</a></p>
+            <p class="location">{{ item.location }}</p>
+            
+            <div class="social-link">
+                
+                    {% if item.twitter %}
+                    <a href="{{item.twitter}}" target="_blank"><i class="fab fa-twitter"></i></a>
+                    {% else %}
+                    <i class="fab fa-twitter" style="background-color: grey;"></i>
+                    {% endif %}
+            
+                    {% if item.linkedin %}
+                    <a href="{{item.linkedin}}" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    {% else %}
+                    <i class="fab fa-linkedin" style="background-color: grey;"></i>
+                    {% endif %}
+                    <a href="{{item.github}}" target="_blank"> <i class="dark-only darkgithub fab fa-github"></i> </a>
+                    <a href="{{item.resume}}" target="_blank"><i class="dark-only darkresume far fa-file-alt"></i></a>
+               
+            </div>
         </div>
     </div>
     {% endfor %}
