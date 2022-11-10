@@ -1,10 +1,37 @@
-<header class="nav-bar">
-    <div class="nav-content">
+<body>
+    <nav class="navbar">
+      <!-- LOGO -->
+      <div class="logo">
         <a href="{{ '/' | relative_url }}">
-            <div class="nav-logo">
-                <img src="./assets/img/mlh-prep.png" />
-            </div>
+          <div class="nav-logo">
+            <img src="./assets/img/mlh-prep.png" />
+          </div>
         </a>
-        
-    </div>
-</header>
+      </div>
+  
+      <!-- NAVIGATION MENU -->
+      <ul class="nav-links">
+        <!-- USING CHECKBOX HACK -->
+        <input type="checkbox" id="checkbox_toggle" />
+        <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+        <!-- NAVIGATION MENUS -->
+        <div class="”menu”">
+          <div class="menu">
+            <li><a href="/">Home</a></li>
+            <li><a href="/">Meet the Team</a></li>
+            <li class="services">
+              <a href="/">Projects</a>
+              <!-- DROPDOWN MENU -->
+              <ul class="dropdown">
+                <li><a href="/">Shoping App </a></li>
+                <li><a href="/">Todo App</a></li>
+                <li><a href="/">iOS App</a></li>
+              </ul>
+            </li>
+            <li><a href="/">Find Us</a></li>
+          </div>
+        </div>
+      </ul>
+    </nav>
+  </body>
+  
