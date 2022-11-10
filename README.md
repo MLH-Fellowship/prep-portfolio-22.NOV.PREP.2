@@ -5,7 +5,7 @@ This is a Jekyll website template designed for Prep Fellows.
 ## Project Setup and Installations
 ### Ruby and Bundler Installation.
 - Follow the steps below to set up Ruby on your local machine depending on the Operating System you are using. You can skip this if you have  Ruby and Bundler installed.
-I
+
 #### Linux
 
    1. On the terminal run `sudo apt-get update`
