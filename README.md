@@ -7,20 +7,20 @@ This is a Jekyll website template designed for Prep Fellows.
 - Follow the steps below to set up Ruby on your local machine depending on the Operating System you are using. You can skip this if you have  Ruby and Bundler installed.
 I
 #### Linux
-```
+
    1. On the terminal run `sudo apt-get update`
    2. Install Ruby by running `sudo apt-get install ruby ruby-dev`
    3. Set up the bundler by using this command `sudo gem install bundler`
    4. Install Dependencies by running `bundle install --path vendor/bundle`.
    5. Then start the server by running `bundle exec jekyll serve`.
-```
+
    
 #### Windows
-```
+
   1. Open PowerShell terminal and run `gem install bundler`. After the process is completed successfully if the message ‘1 gem installed’ is displayed then the process is completed successfully.
   2. Install Dependencies by running `bundle install --path vendor/bundle`.
   3. Then start the server by running `bundle exec jekyll serve`.
-``` 
+
   
 
 #### Mac
