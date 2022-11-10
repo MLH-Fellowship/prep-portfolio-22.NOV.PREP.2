@@ -1,10 +1,40 @@
-<header class="nav-bar">
-    <div class="nav-content">
+ <body>
+    <nav class="navbar">
+      <!-- LOGO -->
+      <div class="logo">
         <a href="{{ '/' | relative_url }}">
-            <div class="nav-logo">
-                <img src="./assets/img/mlh-prep.png" />
-            </div>
-        </a>
-        
-    </div>
-</header>
+        <div class="nav-logo">
+            <img src="./assets/img/mlh-prep.png" />
+        </div>
+    </a></div>
+      
+      <!-- NAVIGATION MENU -->
+      <ul class="nav-links">
+        <!-- USING CHECKBOX HACK -->
+        <input type="checkbox" id="checkbox_toggle" />
+        <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+        <!-- NAVIGATION MENUS -->
+        <div class=”menu”>
+            <div class="menu">
+                <li><a href="/">Home</a></li>
+                <li><a href="/">About</a></li>
+                <li class="services">
+                  <a href="/">Projects</a>
+                  <!-- DROPDOWN MENU -->
+                  <ul class="dropdown">
+                    <li><a href="/">Dropdown 1 </a></li>
+                    <li><a href="/">Dropdown 2</a></li>
+                    <li><a href="/">Dropdown 2</a></li>
+                    <li><a href="/">Dropdown 3</a></li>
+                    <li><a href="/">Dropdown 4</a></li>
+                  </ul>
+                </li>
+                <li><a href="/">Members</a></li>
+                <li><a href="/">Contact</a></li>
+              </div>
+        </div>
+      </ul>
+    </nav>
+  </body>
+ <body>
+</html>
