@@ -1,0 +1,47 @@
+footer {
+  position: absolute;
+  width: 100%;
+}
+
+.footer {
+  box-sizing: border-box;
+  margin-top: 150px;
+  width: 100%;
+  padding: 100px 15%;
+  background: #133667;
+  color: #fff;
+  display: flex;
+}
+
+.footer a {
+  color: #fff;
+}
+
+.footer div {
+  text-align: center;
+}
+
+.footer div h3 {
+  font-weight: 900;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+
+.footer .col1 a {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.footer .col2 {
+  flex-grow: 2;
+}
+
+.footer .col2 p {
+  margin: 30px;
+  font-weight: 500;
+  font-size: large;
+}
+
+.footer .col3 .social-icons > * {
+  margin: 0 5px;
+}

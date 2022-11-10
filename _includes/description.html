@@ -1,25 +1,25 @@
 <h2>Meet the Pod</h2>
-<div class="card-container">
-    {% for item in site.data.fellows %}
-    <div class="card">
-        <div class="info">
-            <p class="title"> {{ item.name }}</p>
-            <p class="location"> {{ item.location }}</p>
-            <div class="social-icons">
-                <a href="" class="social-icon">
-                    <i class='bx bxl-twitter bx-sm bx-tada-hover'></i>
-                </a>
-                <a href="" class="social-icon">
-                    <i class='bx bxl-linkedin-square bx-sm bx-tada-hover' ></i>
-                </a>
-                <a href="" class="social-icon">
-                    <i class='bx bxl-github bx-sm bx-tada-hover' ></i>
-                </a>
-                <a href="" class="social-icon">
-                    <i class='bx bxs-file bx-sm bx-tada-hover' ></i>
-                </a>
-            </div>
-        </div>
+<div id="description-container" class="card-container">
+  {% for item in site.data.fellows %}
+  <div class="card">
+    <div class="info">
+      <p class="title">{{ item.name }}</p>
+      <p class="location">{{ item.location }}</p>
+      <div class="social-icons">
+        <a href="" class="social-icon">
+          <i class="bx bxl-twitter bx-sm bx-tada-hover"></i>
+        </a>
+        <a href="" class="social-icon">
+          <i class="bx bxl-linkedin-square bx-sm bx-tada-hover"></i>
+        </a>
+        <a href="" class="social-icon">
+          <i class="bx bxl-github bx-sm bx-tada-hover"></i>
+        </a>
+        <a href="" class="social-icon">
+          <i class="bx bxs-file bx-sm bx-tada-hover"></i>
+        </a>
+      </div>
     </div>
-    {% endfor %}
+  </div>
+  {% endfor %}
 </div>
