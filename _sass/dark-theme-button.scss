@@ -1,9 +1,9 @@
 
 
   .dark-theme-button{
-
+    display: inline-flex;
     position: relative ;
-    display: flex;
+    float: right;
     align-items: center;
     justify-content: center;
     margin: 25px;
@@ -19,10 +19,16 @@
     height: 27px;
     background-color:#111;
     border-radius:50px;
-    align-items: center;
-    justify-content: space-between;    
-    padding-left: 7.5px;
-    transform: scale(1.5);
+    align-items: center !important;
+    justify-content: space-between !important;        
+    transform: translate(-50%, -20%);
+    display: inline-flex !important;
+    position: relative;
+    
+    font-size: 18px;
+    padding: 5px;
+    line-height: 3.22;
+    
   }
   
   .ball {
@@ -34,6 +40,7 @@
     left: 2px;
     border-radius: 50%;
     transition: transform 0.2s linear;
+    padding-left: 7.5px;
   }
   
   /*  target the elemenent after the label*/
@@ -41,11 +48,14 @@
     transform: translateX(24px);
   }
   
-  .fa-moon {
+  
+
+  .fa-moon {       
     color: yellow;
+    
   }
   
-  .fa-sun {
+  .fa-sun { 
     color: yellow;
   }
 
