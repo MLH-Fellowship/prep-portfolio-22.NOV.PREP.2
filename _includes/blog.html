@@ -11,11 +11,11 @@
                     <div class="title-author-date-container">
                         <p class="title">{{ item.title }}</p>
                         <p class="author">{{ item.author }}</p>
-                        <p class="date">{{ item.date }}</p>
+                        <p class="date">{{ item.date }} • {{ item.duration }}</p>
                     </div>
                     <img src="{{ item.img }}" alt="{{ item.title }}"></img>
                 </div>
-                <p class="content">{{ item.content }}</p>
+                <p class="preview">{{ item.preview }}</p>
             </div>
         </a>
         {% endfor %}

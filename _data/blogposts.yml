@@ -1,20 +1,23 @@
 - author: Name
   img: ./assets/img/logo.jpg
   title: Blog Title 1
-  content: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ac ante ut justo laoreet euismod. Donec scelerisque lorem bibendum sodales vulputate. Proin felis ipsum, imperdiet vitae ullamcorper non, viverra vel quam. Suspendisse sit amet diam accumsan, gravida sem ullamcorper, gravida leo. Nullam dignissim lobortis ante, vel ultricies nisl porta id. Vestibulum in molestie diam. Fusce placerat justo ac facilisis gravida. Aliquam et egestas felis. Donec aliquam odio ut nisi placerat, et volutpat nisl finibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc dictum sodales tellus et lobortis. Integer iaculis lacus id mi cursus rhoncus. Maecenas ex nibh, hendrerit quis pharetra sed, hendrerit et purus. Curabitur ultricies laoreet nulla, in tincidunt sem faucibus ac. Vestibulum ultrices vulputate nunc non efficitur. Duis egestas nec lectus eget aliquet.
+  preview: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ac ante ut justo laoreet euismod...
   date: November 10, 2022
   page-name: ./blogs/blog
+  duration: 5 min read
 
 - author: Name
   img: ./assets/img/logo.jpg
   title: Blog Title 2
-  content: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ac ante ut justo laoreet euismod. Donec scelerisque lorem bibendum sodales vulputate. Proin felis ipsum, imperdiet vitae ullamcorper non, viverra vel quam. Suspendisse sit amet diam accumsan, gravida sem ullamcorper, gravida leo. Nullam dignissim lobortis ante, vel ultricies nisl porta id. Vestibulum in molestie diam. Fusce placerat justo ac facilisis gravida. Aliquam et egestas felis. Donec aliquam odio ut nisi placerat, et volutpat nisl finibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc dictum sodales tellus et lobortis. Integer iaculis lacus id mi cursus rhoncus. Maecenas ex nibh, hendrerit quis pharetra sed, hendrerit et purus. Curabitur ultricies laoreet nulla, in tincidunt sem faucibus ac. Vestibulum ultrices vulputate nunc non efficitur. Duis egestas nec lectus eget aliquet.
+  preview: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ac ante ut justo laoreet euismod...
   date: November 9, 2022
   page-name: ./blogs/blog
+  duration: 5 min read
 
 - author: Name
   img: ./assets/img/logo.jpg
   title: Blog Title 3
-  content: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ac ante ut justo laoreet euismod. Donec scelerisque lorem bibendum sodales vulputate. Proin felis ipsum, imperdiet vitae ullamcorper non, viverra vel quam. Suspendisse sit amet diam accumsan, gravida sem ullamcorper, gravida leo. Nullam dignissim lobortis ante, vel ultricies nisl porta id. Vestibulum in molestie diam. Fusce placerat justo ac facilisis gravida. Aliquam et egestas felis. Donec aliquam odio ut nisi placerat, et volutpat nisl finibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc dictum sodales tellus et lobortis. Integer iaculis lacus id mi cursus rhoncus. Maecenas ex nibh, hendrerit quis pharetra sed, hendrerit et purus. Curabitur ultricies laoreet nulla, in tincidunt sem faucibus ac. Vestibulum ultrices vulputate nunc non efficitur. Duis egestas nec lectus eget aliquet.
+  preview: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ac ante ut justo laoreet euismod...
   date: November 8, 2022
   page-name: ./blogs/blog
+  duration: 5 min read
