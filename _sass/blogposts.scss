@@ -3,22 +3,27 @@
   grid-template-columns: repeat(3, 1fr);
   justify-content: center;
   align-items: center;
+  background-color: var(--color-card) !important;
+  color: var(--color-body-text) !important;
 }
 
 .post {
   display: flex;
   flex-direction: column;
   margin: 20px 30px;
-  background-color: white;
+  background-color: var(--color-card) !important;
+  color: var(--color-body-text) !important;
   border-radius: 0.375rem;
   padding: 1.5em;
-  border: 1px solid rgba(0, 0, 0, 0.125);
+  border: 1px solid var(--color-border);
   .heading-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
+    background-color: var(--color-card);
+    color: var(--color-body-text);
     .title-author-date-container {
       .title {
         font-size: 20px;
