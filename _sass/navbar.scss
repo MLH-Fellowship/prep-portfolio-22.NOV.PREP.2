@@ -5,7 +5,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 20px;
-    background-color: #133667;
+    background-color: #12173d;
     color: #fff;
    }
    .nav-links a {
@@ -34,7 +34,7 @@
     position: relative; 
    }
    .dropdown {
-    background-color: #133667;
+    background-color: #12173d;
     padding: 1em 0;
     position: absolute; /*WITH RESPECT TO PARENT*/
     display: none;
@@ -79,7 +79,7 @@ input[type=checkbox]{
    }
    .menu li:hover {
     display: inline-block;
-    background-color:#4c9e9e;
+    background-color:#041a38;
     transition: 0.3s ease;
    }
    .menu li + li {
@@ -97,6 +97,6 @@ input[type=checkbox]{
     transform: translateX(35%);
    }
    .dropdown li:hover {
-    background-color: #4c9e9e;
+    background-color: #041a38;
    }
    }
