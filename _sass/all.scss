@@ -5,10 +5,9 @@
 @import "page";
 @import "leaderboard";
 @import "footer";
-@import 'carousel';
-@import 'dark-theme-button';
+@import "carousel";
+@import "dark-theme-button";
 @import "blogposts";
-
 
 html {
   scroll-behavior: smooth;
@@ -44,6 +43,10 @@ html {
   #blog-container {
     grid-template-columns: 1fr;
   }
+
+  .footer {
+    flex-direction: column;
+  }
 }
 
 body {
@@ -52,28 +55,24 @@ body {
   transition: background 0.8s linear;
 }
 
-
-
 h2 {
-
-    margin-bottom: 20px;
-    margin-top: 20px;
-    font-weight: 700;
-    text-align: center;
-    color: var(--color-p-text);
-
+  margin-bottom: 20px;
+  margin-top: 20px;
+  font-weight: 700;
+  text-align: center;
+  color: var(--color-p-text);
 }
 
 .card {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin: 20px 30px;
-    border-radius: .375rem;
-    padding: 1.5em;
-    font-size: 1.2em;
-    background-color: var(--color-card);
-    color: var(--color-body-text);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 20px 30px;
+  border-radius: 0.375rem;
+  padding: 1.5em;
+  font-size: 1.2em;
+  background-color: var(--color-card);
+  color: var(--color-body-text);
 }
 
 a {
@@ -84,8 +83,6 @@ a {
   color: var(--color-body-text);
   transition: 1s;
 }
-
-
 
 .info {
   p {
@@ -108,7 +105,7 @@ a {
   .dates {
     font-size: small;
     color: var(--color-info-text);
-}
+  }
 }
 
 .icon {
