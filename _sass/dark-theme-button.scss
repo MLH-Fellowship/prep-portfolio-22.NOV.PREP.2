@@ -92,6 +92,8 @@ $info-text: #404040;
 $info-text-dark: #ffffff;
 $p-text: #212529;
 $p-text-dark: #ffffff;
+$border: #d5dbe0;
+$border-dark: #ffffff;
 
 
 
@@ -102,7 +104,7 @@ $p-text-dark: #ffffff;
   --color-heading-text: #{$heading-text};
   --color-info-text: #{$info-text};
   --color-p-text: #{$p-text};
- 
+  --color-border: #{$border};
   
 }
 
@@ -113,6 +115,6 @@ $p-text-dark: #ffffff;
   --color-heading-text: #{$heading-text-dark};
   --color-info-text: #{$info-text-dark};
   --color-p-text: #{$p-text-dark};
-
+  --color-border: #{$border-dark};
   
 }
