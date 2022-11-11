@@ -13,7 +13,8 @@ const userToRealName = {
     "Bhawna1203": "Bhawna Chauhan",
     "namitaarya": "Namita Arya",
     "youngjun827": "Young Jun Joo",
-    "kpham841": "Khiem Pham"
+    "kpham841": "Khiem Pham",
+    "jerrendang": "Jerren Dang"
 }
 
 fetch(url)
@@ -34,7 +35,7 @@ fetch(url)
                 table += `<tbody>
                 <tr>
                     <td><img class="table-avatar" src="${item.avatar_url}"></img></td>
-                    <td>${userToRealName[item.login]}</td>
+                    <td><a href="https://github.com/${item.login}">${userToRealName[item.login]}</a></td>
                     <td>${item.contributions}</td>
                 </tr>
             </tbody>`
