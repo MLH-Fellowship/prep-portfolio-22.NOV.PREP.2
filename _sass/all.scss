@@ -249,7 +249,7 @@ $avatar-size: 20px;
     // background-color: #f1f1f1e6;
     background: linear-gradient(to bottom, transparent -20%, #5d5d5d 20%);
     transition: 1s;
-    
+
     z-index: 1;
     padding: 10px;
   }
@@ -370,4 +370,16 @@ $avatar-size: 20px;
   100% {
     transform: scale(0);
   }
+}
+
+#MeetThePod {
+  display: inline-block;
+  vertical-align: top;
+  width: 100vw;
+  background: #133667;
+  background: linear-gradient(180deg, #133667 0%, #f5f5f9 100%);
+}
+
+#MeetThePod .meet {
+  color: #f5f5f9
 }
