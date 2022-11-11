@@ -1,18 +1,4 @@
-// .nav-bar {
-//     width: 100%;
-//     background-color: #133667;
-//     font-family: "Poppins", serif;
-//     font-weight: 700 !important;
-//     padding-top: 10px;
-// }
-
-// .nav-content .logo-touch-target {
-//     display: inline-flex;
-//     height: 60%;
-//     width: 350px;
-// }
-
-.nav-content .nav-logo {
+.nav-logo {
     height: 60px;
     margin: auto;
 }
@@ -27,31 +13,6 @@
     width: 200px;
 }
 
-// .nav-content nav {
-//     display: block;
-//     width: 100%;
-//     text-align: right;
-//     padding-top: 0px;
-//     padding-right: 0px;
-// }
-
-// *{
-//     margin: 0;
-//     padding: 0;
-//     box-sizing: border-box;
-//     transition: all 0.4s;
-//     font-family: -apple-system,
-//     BlinkMacSystemFont,
-//     "Segoe UI",
-//     Roboto,
-//     Helvetica,
-//     Arial,
-//     sans-serif,
-//     "Apple Color Emoji",
-//     "Segoe UI Emoji",
-//     "Segoe UI Symbol";
-// }
-
 .container{
     margin-left: 5%;
     margin-right: 5%;
@@ -60,6 +21,7 @@
 /* Navbar section */
 
 .nav{
+    
     width: 100%;
     height: 65px;
     position: fixed;
@@ -184,13 +146,6 @@
     transform: rotate3d(0, 0, 1, -20deg);
 }
 
-/* Home section */
-
-// .home{
-//     width: 100%;
-//     height: 100vh;
-//     background-color: #ddd;
-// }
 
 /* Medai qurey section */
 
