@@ -1,15 +1,133 @@
-- name: Will
-  img: logo.jpg
-  location: London, UK
+- name: Shivam Tyagi
+  img: shivam.jpg
+  location: Patna, India
+  linkedin: "https://www.linkedin.com/in/shivam-tyagi-57b7341a6/"
+  github: "https://github.com/ShivamTyagi12345"
+  twitter: "https://twitter.com/twtyagi"
+  resume: "https://drive.google.com/file/u/2/d/1X4r6IZGNeGBRE1FK2bgcz298ChkyM4wQ/view?usp=sharing"
+  
 
-- name: Amanda
-  img: amanda.jpg
-  location: New York City, USA
+- name: Yusuf Karadag
+  img: yusuf.jpg
+  location: Utrecht, Netherlands
+  linkedin: "https://www.linkedin.com/in/yusufkaradag"
+  github: "https://github.com/miador"
+  twitter: "https://twitter.com/yyusufkaradagg"
+  resume: "https://cv.yusufkaradag.com/"
 
-- name: Aaron
-  img: aaron.jpg
-  location: London, UK
 
-- name: Swift
-  img: swift.jpg
-  location: New York City, USA
+- name: Ivy Jeptoo
+  img: ivy.jpg
+  location: Nairobi, Kenya
+  linkedin: "https://www.linkedin.com/in/ivyjeptoo/"
+  github: "https://github.com/IvyJeptoo"
+  twitter: "https://twitter.com/IvyYegon?t=VrSFnVwGvgFkVlDJHTWs-w&s=09"
+  resume: "https://docs.google.com/document/d/1dEjbSYdFISPnWNKP4GnmX56eSV9h-Yfs8CV9SHLOFEg/edit?usp=share_link"
+ 
+
+- name: Khoa Trinh
+  img: khoa.jpg
+  location: Vancouver, Canada
+  linkedin: "https://www.linkedin.com/in/khoa-trinh-cao/"
+  github: "https://github.com/trinhcaokhoa"
+  twitter: "https://twitter.com/CKhoaTrinh"
+  resume: "https://drive.google.com/file/d/1AVGIE8JtM1sBqpCnRfQqHD9uqpb_SE7S/view?usp=sharing"
+  
+
+- name: Ahmed Emad
+  img: ahmed.jpg
+  location: Cairo, Egypt
+  linkedin: "https://www.linkedin.com/in/ahmed-emad-mahmoud/"
+  github: "https://github.com/ahmedemad242"
+  twitter: ""
+  resume: "https://drive.google.com/file/d/1Jadla11d0Rdfo-vzP7QU34ZBBS6JfvZu/view?usp=sharing"
+
+
+- name: Mansi Mishra
+  img: mansi.jpg
+  location: Chhattisgarh, India
+  linkedin: "https://www.linkedin.com/in/mansi-mishra-5435441b8/"
+  github: "https://github.com/0904-mansi"
+  twitter: "https://twitter.com/MansiMi22804871"
+  resume : "https://drive.google.com/file/d/16tZOUnIqJ60-uqfWGwpN9alcBxoNpiVu/view?usp=sharing"
+
+- name: Carly Kiang
+  img: carly.jpg
+  location: New York, USA
+  linkedin: "https://www.linkedin.com/in/carly-kiang/"
+  github: "https://github.com/carlykiang"
+  twitter: "https://twitter.com/carlykiang"
+  resume: "https://drive.google.com/file/d/1-cLtROkYTcwtE6kWAqTQj6wgCN8YNJCO/view?usp=sharing"
+  
+
+- name: Arman Moztarzadeh
+  img: arman.jpg
+  location: Vancouver, Canada
+  linkedin: "https://www.linkedin.com/in/arman-moztarzadeh"
+  github: "https://github.com/armanmoztar"
+  twitter: "https://twitter.com/armanmoztar"
+  resume: "https://drive.google.com/file/d/1JQN0a8Hyp3ioHPcCdNuV7jn7Kb7wlAAt/view?usp=sharing"
+  
+
+- name: Nora Chamseddin
+  img: nora.jpg
+  location: Ontario, Canada
+  linkedin: "https://www.linkedin.com/in/nora-chamseddin-13b8a5207/"
+  github: "https://github.com/norachams"
+  twitter: ""
+  resume: "https://drive.google.com/file/d/1eUEstfHTTHbUNNv6XWJ-V6ZqxQS7hpGg/view?usp=sharing"
+  
+
+- name: Khiem Pham
+  img: khiem.jpg
+  location: San Diego, USA
+  linkedin: "https://www.linkedin.com/in/kpham841/"
+  github: "https://github.com/kpham841"
+  twitter: "https://github.com/kpham841"
+  resume: "https://kpham841.github.io/KhiemPham_Resume.pdf"
+ 
+
+- name: Jerren Dang
+  img: dang.jpg
+  location: Boston, USA / New York, USA
+  linkedin: ""
+  github: ""
+  twitter: ""
+  resume: ""
+  
+
+- name: Bhawna Chauhan
+  img: bhawna.jpg
+  location: New Delhi, India
+  linkedin: "https://www.linkedin.com/in/bhawna-chauhan-00a32a200/"
+  github: "https://github.com/Bhawna1203/"
+  twitter: "https://twitter.com/BhawnaC18275984"
+  resume: "https://drive.google.com/file/d/1BNMk7gNVoykBaUfawxnb4FYi2oXDKfbY/view?usp=sharing"
+  
+
+- name: Cynthia Iradukunda
+  img: cynthia.jpg
+  location: Rwanda, Africa
+  linkedin: "https://www.linkedin.com/in/ciradu2204/"
+  github: "https://github.com/ciradu2204"
+  twitter: "https://twitter.com/Ciggzy_"
+  resume: "https://docs.google.com/document/d/11VL_ehYAOY5NDSEYi9M8RLY9dH0R1KYL/edit"
+ 
+
+- name: Namita Arya
+  img: namita.jpg
+  location: Delhi, India
+  linkedin: "https://www.linkedin.com/in/namitaarya29/"
+  github: "https://github.com/namitaarya"
+  twitter: ""
+  resume: "https://drive.google.com/file/d/1czkYoQyjSG--MC7St_bfKU4LdA0isTDu/view?usp=sharing"
+  
+
+- name: Young Jun Joo
+  img: young.jpg
+  location: Seoul, South Korea
+  linkedin: "https://www.linkedin.com/in/youngjun827/"
+  github: "https://github.com/youngjun827"
+  twitter: ""
+  resume: "https://docs.google.com/document/d/1xyCJRZiGm5snqW8Jy--PjkWg3nb_0BZh/edit#"
+ 
