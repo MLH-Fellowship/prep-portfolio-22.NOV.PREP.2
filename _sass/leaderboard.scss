@@ -19,7 +19,11 @@ th {
 }
 
 td {
-  background-color: #ffffff;
+  background-color: var(--color-card);
+  
+  
+  color: var(--color-body-text);
+  
 }
 
 #table-head {

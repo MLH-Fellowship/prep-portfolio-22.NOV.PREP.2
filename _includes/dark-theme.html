@@ -1,0 +1,37 @@
+<div class="dark-theme-button">
+  <input type="checkbox" class="checkbox" id="dark-toggle" />
+  <label for="dark-toggle" class="label">
+    <i class="fas fa-moon"></i>
+    <i class="fas fa-sun"></i>
+    <div class="ball"></div>
+  </label>
+</div>
+
+
+
+<script>
+  window.addEventListener("load", () => {
+    const Darktoggle =
+      window.matchMedia &&
+      window.matchMedia("(prefers-color-scheme: light)").matches;
+    
+    if (Darktoggle === false || localStorage.getItem("theme") === "light") {
+      document.body.classList.toggle("dark", false);
+      localStorage.setItem("theme", "light");
+      document.getElementById("dark-toggle").checked = false;      
+      
+      return;
+    }
+    localStorage.setItem("theme", "dark");
+      document.getElementById("dark-toggle").checked = true;
+    
+  });
+
+  document
+    .getElementById("dark-toggle")
+    .addEventListener("click", (event) => {
+      document.body.classList.toggle("dark", event.target.checked);
+      localStorage.setItem("theme", event.target.checked ? "dark" : "light");
+    });
+</script>
+
