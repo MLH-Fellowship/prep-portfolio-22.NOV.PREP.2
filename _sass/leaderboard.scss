@@ -19,10 +19,13 @@ th {
 }
 
 td {
-  background-color: var(--color-card);
-  
+  background-color: var(--color-card); 
   
   color: var(--color-body-text);
+
+  a{
+    color: var(--color-body-text);
+  }
   
 }
 
