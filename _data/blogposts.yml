@@ -1,0 +1,23 @@
+- author: Name
+  img: ./assets/img/logo.jpg
+  title: Blog Title 1
+  preview: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ac ante ut justo laoreet euismod...
+  date: November 10, 2022
+  page-name: ./blogs/blog
+  duration: 5 min read
+
+- author: Name
+  img: ./assets/img/logo.jpg
+  title: Blog Title 2
+  preview: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ac ante ut justo laoreet euismod...
+  date: November 9, 2022
+  page-name: ./blogs/blog
+  duration: 5 min read
+
+- author: Name
+  img: ./assets/img/logo.jpg
+  title: Blog Title 3
+  preview: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ac ante ut justo laoreet euismod...
+  date: November 8, 2022
+  page-name: ./blogs/blog
+  duration: 5 min read

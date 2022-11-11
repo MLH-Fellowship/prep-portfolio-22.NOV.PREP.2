@@ -5,7 +5,8 @@
 @import "page";
 @import "leaderboard";
 @import "footer";
-@import 'carousel';
+@import "blogposts";
+@import "carousel";
 
 html {
   scroll-behavior: smooth;
@@ -21,10 +22,14 @@ html {
   .card-container {
     grid-template-columns: repeat(3, 1fr);
   }
+  #blog-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media only screen and (max-width: 1000px) {
-  .card-container {
+  .card-container,
+  #blog-container {
     grid-template-columns: repeat(2, 1fr);
   }
   table {
@@ -33,7 +38,8 @@ html {
 }
 
 @media only screen and (max-width: 768px) {
-  .card-container {
+  .card-container,
+  #blog-container {
     grid-template-columns: 1fr;
   }
 }
@@ -44,7 +50,7 @@ body {
 }
 h2 {
   margin-bottom: 20px;
-  margin-top: 20px;
+  margin-top: 40px;
   font-weight: 700;
   text-align: center;
 }
@@ -167,15 +173,14 @@ $avatar-size: 20px;
   font-weight: 500;
 }
 
-.pod{
-
+.pod {
   * {
     box-sizing: border-box;
   }
 
   body {
-    font-family: 'Lato', sans-serif;
-    background-color:#eaeaea;
+    font-family: "Lato", sans-serif;
+    background-color: #eaeaea;
   }
 
   .container {
@@ -192,7 +197,9 @@ $avatar-size: 20px;
   }
 
   /* Remove extra left and right margins, due to padding */
-  .row {margin: 0 -5px;}
+  .row {
+    margin: 0 -5px;
+  }
 
   /* Clear floats after the columns */
   .row:after {
@@ -203,8 +210,7 @@ $avatar-size: 20px;
 
   /* Responsive columns */
   @media screen and (max-width: 700px) {
-
-    .container{
+    .container {
       width: 100%;
     }
 
@@ -249,7 +255,7 @@ $avatar-size: 20px;
     // background-color: #f1f1f1e6;
     background: linear-gradient(to bottom, transparent -20%, #5d5d5d 20%);
     transition: 1s;
-    
+
     z-index: 1;
     padding: 10px;
   }
@@ -347,8 +353,8 @@ $avatar-size: 20px;
   &:hover,
   &:focus {
     border-radius: 8px;
-  background: #133667;
-  transition: all 2s ease-in-out;
+    background: #133667;
+    transition: all 2s ease-in-out;
   }
 }
 
