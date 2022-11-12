@@ -14,7 +14,8 @@ const userToRealName = {
     "namitaarya": "Namita Arya",
     "youngjun827": "Young Jun Joo",
     "kpham841": "Khiem Pham",
-    "jerrendang": "Jerren Dang"
+    "jerrendang": "Jerren Dang",
+    "0904-mansi": "Mansi Mishra"
 }
 
 fetch(url)
