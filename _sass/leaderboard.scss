@@ -1,12 +1,12 @@
 #leaderboard-container {
   display: block;
-  margin: 0 auto;
+  margin: 0px auto;
 }
 
 table {
   border-collapse: collapse;
   width: 50%;
-  margin: 0px auto;
+  margin: 20px auto;
   border-radius: 5px;
 }
 
@@ -19,7 +19,14 @@ th {
 }
 
 td {
-  background-color: #ffffff;
+  background-color: var(--color-card); 
+  
+  color: var(--color-body-text);
+
+  a{
+    color: var(--color-body-text);
+  }
+  
 }
 
 #table-head {
