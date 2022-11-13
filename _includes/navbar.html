@@ -8,20 +8,20 @@
   </head>
   <body>
     <script src="/assets/js/navbar.js"></script>
-    <nav class="nav">
-      <div class="container">
+    <nav class="navbar fixed-top nav">
+      <div class="container-fluid">
         <div class="logo">
-          <a href="#"><img src="./assets/img/mlh-prep.png" /></a>
+          <a class="navbar-brand" href="#"><img src="./assets/img/mlh-prep.png" /></a>
         </div>
+        
         <div class="main_list" id="mainListDiv">
           <ul>
-            
             <li><a href="#">Home</a></li>
             <li><a href="#description-container">Team</a></li>
             <li><a href="#leaderboard-container">Board</a></li>
-            <li><a href="#project-container">Projects</a></li>
+            <li><a href="#Projects">Projects</a></li>
             <li><a href="#">Map</a></li>
-            <li>{% include dark-theme.html %}</li>
+            <li>{% include dark-theme.html %}</li>            
           </ul>
           
         </div>

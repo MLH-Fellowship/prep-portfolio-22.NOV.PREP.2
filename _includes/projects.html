@@ -1,19 +1,55 @@
-<h2>Projects</h2>
-<div id="project-container" class="card-container">
+<style>
+  
+  .card-container{
+    height: 300px;
+    width: 600px;
+    text-align: center;
+    align-items: justify;
+    margin-left: 150px;
+  }
+  .flip-card{
+      height: 300px;
+      width: 370px;
+
+    }
+
+</style>
+<h2 id="Projects">Projects</h2>
+<div class="card-container">
     {% for item in site.data.projects %}
     {% if item.page-name %}
     <a href="/projects/{{ item.page-name }}">
     {% else %}
     <a>
     {% endif %}
-      <div class="card">
-        <div class="info">
-          <p class="title">{{ item.title }}</p>
-          <p class="location">{{ item.event }}</p>
-          <p class="dates">{{ item.date }}</p>
+     <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="./assets/img/{{ item.image }}" alt="Avatar" style=" object-fit: cover;
+            height: 200px; margin-top: 20px;  ">
+          </div>
+          <div class="flip-card-back">
+            <div class="info">
+              <p class="title">{{ item.title }}</p>
+              
+              <p class="location">{{ item.event }}</p>
+              
+              <p class="dates">{{ item.date }}</p>
+              <br>
+              <p class="des">{{ item.des }}</p>
+             
+              <button class="btn">
+                
+                View Project
+                </button>
+              
+              
+
+              
+            </div>
+          </div>
         </div>
       </div>
     </a>
     {% endfor %}
   </div>
-  

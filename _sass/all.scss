@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&family=Cookie&family=Dancing+Script:wght@400;700&family=Inspiration&family=Pacifico&family=Poppins:wght@100;300&family=Satisfy&family=Shadows+Into+Light&display=swap');
 @import "navbar";
 @import "profile";
 @import "page";
@@ -10,6 +11,7 @@
 @import "blogposts";
 @import "map";
 
+
 html {
   scroll-behavior: smooth;
 }
@@ -18,6 +20,15 @@ html {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   font-family: "Open Sans", sans-serif;
+}
+
+// back to top
+#btn-back-to-top{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+
 }
 
 @media only screen and (max-width: 1500px) {
@@ -54,6 +65,7 @@ body {
   background-color: var(--color-body) !important;
   margin-bottom: 50px;
   transition: background 0.8s linear;
+  
 }
 
 h2 {
@@ -84,12 +96,103 @@ a {
   color: var(--color-body-text);
   transition: 1s;
 }
+.flip-card {
+  min-width: 100%;
+  background-color: transparent;
+  
+  text-align: center;
+  height: 400px;
+  width: 300px;
+  border: 30px solid #254169;
+  
+  perspective: 1000px; 
 
+
+  
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30ch, 1fr));
+    grid-gap: 1.5rem;
+  
+}
+.des {
+  font-size: medium;
+  color: #fcfafa;
+  text-align: center;
+}
+.btn {
+background-color: #254169;
+border: none;
+color: white;
+padding: 16px 32px;
+text-align: center;
+font-size: 16px;
+margin: 4px 2px;
+opacity: 0.6;
+transition: 0.3s;
+}
+
+.btn:hover {opacity: 1;
+  color: white;}
+.image {
+  padding: 20px 0px 20px 0px;
+  height: 100px;
+  
+}
+
+
+
+
+.flip-card-inner {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  
+  
+}
+
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+
+.flip-card-front {
+ 
+  color: black;
+  
+  
+}
+
+
+
+.flip-card-back {
+  background-color: #fff;
+  color: black;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  transform: rotateY(180deg);
+
+}
 .info {
   p {
     margin-top: 5px;
     margin: 0px;
-    text-align: left;
+    text-align: center;
+    color: black;
   }
 
   .title {
@@ -141,7 +244,7 @@ $avatar-size: 20px;
     margin: 0rem 0.1rem 0rem 0.2rem;
   }
   .desc {
-    font-size: small;
+    font-size: medium;
   }
   .card-img-top {
     position: absolute;
@@ -178,11 +281,14 @@ $avatar-size: 20px;
   text-transform: capitalize;
   font-size: 11px;
   margin-right: 6px;
-  color: rgb(255, 255, 255);
+  color: black;
   font-weight: 500;
 }
 
+
+
 .pod {
+
   * {
     box-sizing: border-box;
   }

@@ -5,7 +5,7 @@
   github: "https://github.com/ShivamTyagi12345"
   twitter: "https://twitter.com/twtyagi"
   resume: "https://drive.google.com/file/u/2/d/1X4r6IZGNeGBRE1FK2bgcz298ChkyM4wQ/view?usp=sharing"
-  
+  page: shivam
 
 - name: Yusuf Karadag
   img: yusuf.jpg
@@ -14,7 +14,7 @@
   github: "https://github.com/miador"
   twitter: "https://twitter.com/yyusufkaradagg"
   resume: "https://cv.yusufkaradag.com/"
-
+  page: yusuf
 
 - name: Ivy Jeptoo
   img: ivy.jpg
@@ -23,7 +23,7 @@
   github: "https://github.com/IvyJeptoo"
   twitter: "https://twitter.com/IvyYegon?t=VrSFnVwGvgFkVlDJHTWs-w&s=09"
   resume: "https://docs.google.com/document/d/1dEjbSYdFISPnWNKP4GnmX56eSV9h-Yfs8CV9SHLOFEg/edit?usp=share_link"
- 
+  page: ivy
 
 - name: Khoa Trinh
   img: khoa.jpg
@@ -32,8 +32,8 @@
   github: "https://github.com/trinhcaokhoa"
   twitter: "https://twitter.com/CKhoaTrinh"
   resume: "https://drive.google.com/file/d/1AVGIE8JtM1sBqpCnRfQqHD9uqpb_SE7S/view?usp=sharing"
+  page: khoa
   
-
 - name: Ahmed Emad
   img: ahmed.jpg
   location: Cairo, Egypt
@@ -41,7 +41,7 @@
   github: "https://github.com/ahmedemad242"
   twitter: ""
   resume: "https://drive.google.com/file/d/1Jadla11d0Rdfo-vzP7QU34ZBBS6JfvZu/view?usp=sharing"
-
+  page: ahmed
 
 - name: Mansi Mishra
   img: mansi.jpg
@@ -50,6 +50,7 @@
   github: "https://github.com/0904-mansi"
   twitter: "https://twitter.com/MansiMi22804871"
   resume : "https://drive.google.com/file/d/16tZOUnIqJ60-uqfWGwpN9alcBxoNpiVu/view?usp=sharing"
+  page: mansi
 
 - name: Carly Kiang
   img: carly.jpg
@@ -58,8 +59,8 @@
   github: "https://github.com/carlykiang"
   twitter: "https://twitter.com/carlykiang"
   resume: "https://drive.google.com/file/d/1-cLtROkYTcwtE6kWAqTQj6wgCN8YNJCO/view?usp=sharing"
+  page: carly
   
-
 - name: Arman Moztarzadeh
   img: arman.jpg
   location: Vancouver, Canada
@@ -67,7 +68,7 @@
   github: "https://github.com/armanmoztar"
   twitter: "https://twitter.com/armanmoztar"
   resume: "https://drive.google.com/file/d/1JQN0a8Hyp3ioHPcCdNuV7jn7Kb7wlAAt/view?usp=sharing"
-  
+  page: arman
 
 - name: Nora Chamseddin
   img: nora.jpg
@@ -76,7 +77,7 @@
   github: "https://github.com/norachams"
   twitter: ""
   resume: "https://drive.google.com/file/d/1eUEstfHTTHbUNNv6XWJ-V6ZqxQS7hpGg/view?usp=sharing"
-  
+  page: nora 
 
 - name: Khiem Pham
   img: khiem.jpg
@@ -85,8 +86,8 @@
   github: "https://github.com/kpham841"
   twitter: "https://github.com/kpham841"
   resume: "https://kpham841.github.io/KhiemPham_Resume.pdf"
+  page: khiem
  
-
 - name: Jerren Dang
   img: dang.jpg
   location: Boston, USA / New York, USA
@@ -94,7 +95,7 @@
   github: ""
   twitter: ""
   resume: ""
-  
+  page: jerren
 
 - name: Bhawna Chauhan
   img: bhawna.jpg
@@ -103,7 +104,7 @@
   github: "https://github.com/Bhawna1203/"
   twitter: "https://twitter.com/BhawnaC18275984"
   resume: "https://drive.google.com/file/d/1BNMk7gNVoykBaUfawxnb4FYi2oXDKfbY/view?usp=sharing"
-  
+  page: bhawna
 
 - name: Cynthia Iradukunda
   img: cynthia.jpg
@@ -112,7 +113,7 @@
   github: "https://github.com/ciradu2204"
   twitter: "https://twitter.com/Ciggzy_"
   resume: "https://docs.google.com/document/d/11VL_ehYAOY5NDSEYi9M8RLY9dH0R1KYL/edit"
- 
+  page: cynthia
 
 - name: Namita Arya
   img: namita.jpg
@@ -121,7 +122,7 @@
   github: "https://github.com/namitaarya"
   twitter: ""
   resume: "https://drive.google.com/file/d/1czkYoQyjSG--MC7St_bfKU4LdA0isTDu/view?usp=sharing"
-  
+  page: namita
 
 - name: Young Jun Joo
   img: young.jpg
@@ -130,4 +131,4 @@
   github: "https://github.com/youngjun827"
   twitter: ""
   resume: "https://docs.google.com/document/d/1xyCJRZiGm5snqW8Jy--PjkWg3nb_0BZh/edit#"
- 
+  page: young
