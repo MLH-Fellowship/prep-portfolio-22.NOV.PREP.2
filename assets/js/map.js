@@ -9,6 +9,7 @@ function initMap() {
   
   
   var locations = [
+
     ['Nora Waterloo, Canada', 51.213890, -102.4627768, 'assets/img/nora.jpg#custom_marker' ],
     ['Namita, Delhi, India ',28.7041, 77.1025 , 'assets/img/Namita.jpg#custom_marker'],
     ['Khiem, San Diago, USA', 32.715736, -117.161087, 'assets/img/Khiem.jpg#custom_marker'],
@@ -23,6 +24,8 @@ function initMap() {
     ['Arman, Vancouver, Canada', 50.2610, -123.2488, 'assets/img/arman.jpg#custom_marker'],
     ['Carly, New York, USA', 40.7128, -74.0060, 'assets/img/carly.jpg#custom_marker'],
     ['Cynthia, Rwanda, Africa', 1.9403, 29.8739, 'assets/img/cynthia.jpg#custom_marker'],
+
+
 
   ];
   

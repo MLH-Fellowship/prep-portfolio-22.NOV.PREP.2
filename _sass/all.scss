@@ -16,6 +16,7 @@ html {
   scroll-behavior: smooth;
 }
 
+
 @import "map";
 
 @import "footer";
@@ -28,6 +29,7 @@ html {
 html {
   scroll-behavior: smooth;
 }
+
 
 
 .card-container {
@@ -506,3 +508,34 @@ $avatar-size: 20px;
     transform: scale(0);
   }
 }
+
+
+// page loader
+
+#loader{
+  position:absolute; 
+  top:0; left:0; 
+  display:flex; 
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: center; 
+  z-index: 999; 
+  width:100vw; 
+  height:100vh; 
+  background-color: black;
+  animation: loader 2s infinite w;
+}
+
+.animation_text{
+  font-weight: 700; 
+  font-size: 2rem; 
+  width: 50vw; 
+  text-align: center; 
+  margin-top: 20px;
+}
+
+#loader_wrapper {
+  display: none;
+  // text-align: center;
+}
+

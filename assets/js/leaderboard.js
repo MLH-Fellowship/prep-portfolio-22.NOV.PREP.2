@@ -1,5 +1,3 @@
-const url = "https://api.github.com/repos/MLH-Fellowship/prep-portfolio-22.NOV.PREP.2/contributors"
-
 const userToRealName = {
     "ciradu2204": "Cynthia Iradukunda",
     "ShivamTyagi12345": "Shivam Tyagi",
@@ -18,13 +16,68 @@ const userToRealName = {
     "0904-mansi": "Mansi Mishra"
 }
 
-fetch(url)
-  .then((response) => response.json())
-  .then((data) => {
-    const sorted = data.sort((a, b) => b.contributions - a.contributions);
-    const newSorted = sorted.filter((user) => userToRealName[user.login]);
+const urls = [
+    "https://api.github.com/search/issues?q=org:MLH-Fellowship%20repo:prep-portfolio-22.NOV.PREP.2%20author:ciradu2204%20type:pr%20is:merged",
+    "https://api.github.com/search/issues?q=org:MLH-Fellowship%20repo:prep-portfolio-22.NOV.PREP.2%20author:ShivamTyagi12345%20type:pr%20is:merged",
+    "https://api.github.com/search/issues?q=org:MLH-Fellowship%20repo:prep-portfolio-22.NOV.PREP.2%20author:miador%20type:pr%20is:merged",
+    "https://api.github.com/search/issues?q=org:MLH-Fellowship%20repo:prep-portfolio-22.NOV.PREP.2%20author:IvyJeptoo%20type:pr%20is:merged",
+    "https://api.github.com/search/issues?q=org:MLH-Fellowship%20repo:prep-portfolio-22.NOV.PREP.2%20author:trinhcaokhoa%20type:pr%20is:merged",
+    "https://api.github.com/search/issues?q=org:MLH-Fellowship%20repo:prep-portfolio-22.NOV.PREP.2%20author:ahmedemad242%20type:pr%20is:merged",
+    "https://api.github.com/search/issues?q=org:MLH-Fellowship%20repo:prep-portfolio-22.NOV.PREP.2%20author:armanmoztar%20type:pr%20is:merged",
+    "https://api.github.com/search/issues?q=org:MLH-Fellowship%20repo:prep-portfolio-22.NOV.PREP.2%20author:namitaarya%20type:pr%20is:merged",
+    "https://api.github.com/search/issues?q=org:MLH-Fellowship%20repo:prep-portfolio-22.NOV.PREP.2%20author:kpham841%20type:pr%20is:merged",
+    "https://api.github.com/search/issues?q=org:MLH-Fellowship%20repo:prep-portfolio-22.NOV.PREP.2%20author:0904-mansi%20type:pr%20is:merged"
+]
 
-    let table = `<thead>
+Promise.all(urls.map(url => fetch(url))).then(responses => Promise.all(responses.map(res => res.json()))).then(data => {
+    let sortedData = data.sort((a, b) => b.total_count - a.total_count)
+
+    let noraObj = {
+        "items": {
+            "login": "norachams",
+            "avatar_url": "https://avatars.githubusercontent.com/u/78521390?v=4"
+        },
+        "total_count": 1
+    }
+    sortedData.push(noraObj)
+
+    let bhawnaObj = {
+        "items": {
+                "login": "Bhawna1203",
+                "avatar_url": "https://avatars.githubusercontent.com/u/81790585?v=4"
+        },
+        "total_count": 1
+    }
+    sortedData.push(bhawnaObj)
+
+    let jerrenObj = {
+        "items": {
+                "login": "jerrendang",
+                "avatar_url": "https://avatars.githubusercontent.com/u/16262549?v=4"
+        },
+        "total_count": 1
+    }
+    sortedData.push(jerrenObj)
+
+    let carlyObj = {
+        "items": {
+                "login": "carlykiang",
+                "avatar_url": "https://avatars.githubusercontent.com/u/86347313?v=4"
+        },
+        "total_count": 0
+    }
+    sortedData.push(carlyObj)
+
+    let youngObj = {
+        "items": {
+                "login": "youngjun827",
+                "avatar_url": "https://avatars.githubusercontent.com/u/91986838?v=4"
+        },
+        "total_count": 0
+    }
+    sortedData.push(youngObj)
+
+        let table = `<thead>
             <tr id="table-head">
                 <th>Picture</th>
                 <th>Name</th>
@@ -32,14 +85,28 @@ fetch(url)
             </tr>
         </thead>`;
 
-        newSorted.forEach((item) => {
+        // loop through the sorted data
+        for (let i = 0; i < sortedData.length; i++) {
+            console.log(i)
+            if (i >= 10) {
                 table += `<tbody>
                 <tr>
-                    <td><img class="table-avatar" src="${item.avatar_url}"></img></td>
-                    <td><a href="https://github.com/${item.login}">${userToRealName[item.login]}</a></td>
-                    <td>${item.contributions}</td>
+                <td><img class="table-avatar" src="${sortedData[i].items.avatar_url}"></img></td>
+                <td><a href="https://github.com/${sortedData[i].items.login}">${userToRealName[sortedData[i].items.login]}</a></td>
+                <td>${sortedData[i].total_count}</td>
                 </tr>
             </tbody>`
-        })
+
+            }
+            else {
+                table += `<tbody>
+                <tr>
+                <td><img class="table-avatar" src="${sortedData[i].items[0].user.avatar_url}"></img></td>
+                <td><a href="https://github.com/${sortedData[i].items[0].user.login}">${userToRealName[sortedData[i].items[0].user.login]}</a></td>
+                <td>${sortedData[i].total_count}</td>
+                </tr>
+            </tbody>`
+            }
+        }
         document.getElementById("leaderboard-table").innerHTML = table;
     });
