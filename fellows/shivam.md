@@ -1,5 +1,5 @@
 ---
-title: Shivam Chamseddin
+title: Shivam Tyagi
 layout: fellow
 university: National Institute of Technology Patna
 location: Patna,India
