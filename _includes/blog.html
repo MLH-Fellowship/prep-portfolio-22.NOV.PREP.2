@@ -1,0 +1,23 @@
+<h2>Blog</h2>
+<div id="blog-container">
+    {% for item in site.data.blogposts %}
+    {% if item.page-name %}
+    <a href="{{ item.page-name }}">
+        {% else %}
+        <a>
+            {% endif %}
+            <div class="post">
+                <div class="heading-container">
+                    <div class="title-author-date-container">
+                        <p class="title">{{ item.title }}</p>
+                        <p class="author">{{ item.author }}</p>
+                        <p class="date">{{ item.date }} • {{ item.duration }}</p>
+                    </div>
+                    <img src="{{ item.img }}" alt="{{ item.title }}"></img>
+                </div>
+                <p class="preview">{{ item.preview }}</p>
+            </div>
+        </a>
+        {% endfor %}
+
+</div>

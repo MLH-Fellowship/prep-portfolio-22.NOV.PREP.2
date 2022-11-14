@@ -1,25 +1,110 @@
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.3.1/swiper-bundle.css" />
+  <style>
+    a {
+      color: black;
+    }
+    .fellow-name{
+      color: black;
+    }
+  </style>
+</head>
+<h2>Welcome</h2>
+<section id="desc">
+  <div class ="container mb-5">
+    <h2>Welcome</h2>
+    <h2>Welcome</h2>
+    <p style ="text-align:center; padding-left: 10em; color:#464647;"> We are Pod 22.NOV.PREP.2 AKA <span style="background: #1d539f;color: white;margin: 0 2px;padding: 0 5px;border-radius: 2px;">Byter Badgers</span> for the November Major League Hacking Prep Program. Our group came together from all around the world to work on developing websites and applications we are passionate about. We strive to learn about new technologies, languages and frameworks, and apply our skills to real world projects with the amazing support of our Pod Team Leader, Grace Omotoso. Learn more about our members, the types of projects we are working on, and our contributions to them below! </p>        
+  </div>
+</section>
+
+<section id="MeetThePod">
 <h2>Meet the Pod</h2>
-<div class="card-container">
-    {% for item in site.data.fellows %}
-    <div class="card">
-        <div class="info">
-            <p class="title"> {{ item.name }}</p>
-            <p class="location"> {{ item.location }}</p>
-            <div class="social-icons">
-                <a href="" class="social-icon">
-                    <i class='bx bxl-twitter bx-sm bx-tada-hover'></i>
+<div class="pod">
+    <div class="container swiper mySwiper">
+      <div class="swiper-wrapper">
+        {% for item in site.data.fellows %}
+        <div class="profile-card swiper-slide">
+          <div class="content">
+            <div class="front">
+              <div id="img-container">
+                <a href="/fellows/{{ item.page }}">
+                <img src="assets/img/{{ item.img }}" class="profile-image" width="100%">
                 </a>
-                <a href="" class="social-icon">
-                    <i class='bx bxl-linkedin-square bx-sm bx-tada-hover' ></i>
-                </a>
-                <a href="" class="social-icon">
-                    <i class='bx bxl-github bx-sm bx-tada-hover' ></i>
-                </a>
-                <a href="" class="social-icon">
-                    <i class='bx bxs-file bx-sm bx-tada-hover' ></i>
-                </a>
+              </div>
+              <h2 class="fellow-name" ><a href="/fellows/{{ item.page }}">{{ item.name }}</a></h3>
             </div>
+            <div class="back from-left">
+              <p> {{ item.location}}</p>
+              <div class="social-link">
+              
+                {% if item.twitter %}
+                <a href="{{item.twitter}}" target="_blank"><i class="bx bxl-twitter bx-sm bx-tada-hover"></i></a>
+                {% else %}
+                <i class="fab fa-twitter" style="background-color: grey;"></i>
+                p         {% endif %}
+        
+                {% if item.linkedin %}
+                <a href="{{item.linkedin}}" target="_blank"><i class="bx bxl-linkedin-square bx-sm bx-tada-hover"></i></a>
+                {% else %}
+                <i class="bx bxl-linkedin-square bx-sm bx-tada-hover" style="background-color: grey;"></i>
+                {% endif %}
+                <a href="{{item.github}}" target="_blank"> <i class=" bx bxl-github bx-sm bx-tada-hover"></i> </a>
+                <a href="{{item.resume}}" target="_blank"><i class=" bx bxs-file bx-sm bx-tada-hover"></i></a>
+                
         </div>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
     </div>
-    {% endfor %}
-</div>
+    </div>
+</section>
+<script src="/assets/js/script.js"></script>
+<!-- Swiper  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.3.1/swiper-bundle.min.js"></script>
+
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    observer: true,
+    observeParents: true,
+    slidesPerView: 4,
+    spaceBetween: 30,
+    slidesPerGroup: 4,
+    loop: true,
+    loopFillGroupWithBlank: false,
+    keyboard: {
+      enabled: true,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+      0: {
+          slidesPerView: 1,
+          slidesPerGroup: 1,
+      },
+      520: {
+          slidesPerView: 2,
+          slidesPerGroup: 2,
+      },
+      770: {
+          slidesPerView: 3,
+          slidesPerGroup: 3,
+      },
+      1024: {
+        slidesPerView: 4,
+        slidesPerGroup: 4,
+      }
+    },
+  });
+</script>

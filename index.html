@@ -1,21 +1,66 @@
 ---
 ---
+
 <!DOCTYPE html>
 <html lang="en">
-{% include header.html %}
+  {% include header.html %}
 
-<body>
-    {% include navbar.html %}
+  <body style="margin: 0; padding: 0;">
+    <div id="loader">
+        <div class="animation">
+            <img  src="https://media.giphy.com/media/WiIuC6fAOoXD2/giphy.gif" alt="">
+        </div>
+        <div class="animation_text">
+            <p ><span style="color: whitesmoke;"> ♥ BYTE BADGERS ♥</span></p>
 
-    {% include profile.html %}
 
-    {% include description.html %}
+        </div>
 
-    {% include projects.html %}
+    </div>
 
-    {% include leaderboard.html %}
+    <div id="loader_wrapper">
+      {% include navbar.html %} {% include description.html %} {% include
+      projects.html %} {% include leaderboard.html %} {% include blog.html %} {%
+      include map.html %} {% include footer.html %}
+      
+        <i id="btn-back-to-top" class="bx bx-up-arrow-circle bx-lg bx-tada"></i>
+    </div>
+    <script>
+      //Get the button
+      let mybutton = document.getElementById("btn-back-to-top");
 
-    {% include map.html %}
-</body>
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function () {
+        scrollFunction();
+      };
 
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+      // When the user clicks on the button, scroll to the top of the document
+      mybutton.addEventListener("click", backToTop);
+
+      function backToTop() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+
+    //   loader
+
+      window.onload = function (){
+        let loader = document.getElementById("loader");
+        let contents = document.getElementById("loader_wrapper")
+
+        loader.style.display = "none";
+        contents.style.display = "block";
+      }
+    </script>
+  </body>
 </html>
