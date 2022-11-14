@@ -1,10 +1,39 @@
-<header class="nav-bar">
-    <div class="nav-content">
-        <a href="{{ '/' | relative_url }}">
-            <div class="nav-logo">
-                <img src="./assets/img/mlh-prep.png" />
-            </div>
-        </a>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script src="/assets/js/navbar.js"></script>
+    <nav class="navbar fixed-top nav">
+      <div class="container-fluid">
+        <div class="logo">
+          <a class="navbar-brand" href="#"><img src="./assets/img/mlh-prep.png" /></a>
+        </div>
         
-    </div>
-</header>
+        <div class="main_list" id="mainListDiv">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#description-container">Team</a></li>
+            <li><a href="#leaderboard-container">Board</a></li>
+            <li><a href="#Projects">Projects</a></li>
+            <li><a href="#">Map</a></li>
+            <li>{% include dark-theme.html %}</li>            
+          </ul>
+          
+        </div>
+        <div class="media_button">
+          <button class="main_media_button" id="mediaButton">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+        
+      </div>
+    </nav>
+  </body>
+</html>
