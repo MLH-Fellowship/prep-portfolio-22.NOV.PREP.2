@@ -59,23 +59,23 @@ Promise.all(urls.map(url => fetch(url))).then(responses => Promise.all(responses
     }
     sortedData.push(jerrenObj)
 
-    let carlyObj = {
-        "items": {
-                "login": "carlykiang",
-                "avatar_url": "https://avatars.githubusercontent.com/u/86347313?v=4"
-        },
-        "total_count": 0
-    }
-    sortedData.push(carlyObj)
+    // let carlyObj = {
+    //     "items": {
+    //             "login": "carlykiang",
+    //             "avatar_url": "https://avatars.githubusercontent.com/u/86347313?v=4"
+    //     },
+    //     "total_count": 0
+    // }
+    // sortedData.push(carlyObj)
 
-    let youngObj = {
-        "items": {
-                "login": "youngjun827",
-                "avatar_url": "https://avatars.githubusercontent.com/u/91986838?v=4"
-        },
-        "total_count": 0
-    }
-    sortedData.push(youngObj)
+    // let youngObj = {
+    //     "items": {
+    //             "login": "youngjun827",
+    //             "avatar_url": "https://avatars.githubusercontent.com/u/91986838?v=4"
+    //     },
+    //     "total_count": 0
+    // }
+    // sortedData.push(youngObj)
 
         let table = `<thead>
             <tr id="table-head">
