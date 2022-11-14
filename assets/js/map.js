@@ -1,5 +1,6 @@
 
 function initMap() {
+
   var image = {
     url: null,
     scaledSize: new google.maps.Size(30, 30),
