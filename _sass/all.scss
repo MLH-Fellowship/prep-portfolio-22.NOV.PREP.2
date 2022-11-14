@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&family=Cookie&family=Dancing+Script:wght@400;700&family=Inspiration&family=Pacifico&family=Poppins:wght@100;300&family=Satisfy&family=Shadows+Into+Light&display=swap');
 @import "navbar";
 @import "profile";
 @import "page";
@@ -8,6 +9,8 @@
 @import "carousel";
 @import "dark-theme-button";
 @import "blogposts";
+@import "map";
+
 
 html {
   scroll-behavior: smooth;
@@ -17,6 +20,15 @@ html {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   font-family: "Open Sans", sans-serif;
+}
+
+// back to top
+#btn-back-to-top{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+
 }
 
 @media only screen and (max-width: 1500px) {
@@ -53,6 +65,7 @@ body {
   background-color: var(--color-body) !important;
   margin-bottom: 50px;
   transition: background 0.8s linear;
+  
 }
 
 h2 {

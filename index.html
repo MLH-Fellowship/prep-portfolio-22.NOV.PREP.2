@@ -1,23 +1,50 @@
 ---
 ---
+
 <!DOCTYPE html>
 <html lang="en">
-{% include header.html %}
+  {% include header.html %}
 
-<body>
-    {% include navbar.html %}
+  <body>
+    <div>
+      {% include navbar.html %} {% include description.html %} {% include
+      projects.html %} {% include leaderboard.html %} {% include blog.html %} {% include map.html %} 
+      
+      {% include footer.html %}
+      <button
+        type="button"
+        class="btn  btn-floating btn-lg"
+        id="btn-back-to-top"
+      >
+        <i  class="bx bx-up-arrow-circle bx-lg bx-tada"></i>
+      </button>
+    </div>
+    <script>
+      //Get the button
+      let mybutton = document.getElementById("btn-back-to-top");
 
-<!--     {% include profile.html %} -->
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function () {
+        scrollFunction();
+      };
 
-    {% include description.html %}
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+      // When the user clicks on the button, scroll to the top of the document
+      mybutton.addEventListener("click", backToTop);
 
-    {% include projects.html %}
-
-    {% include leaderboard.html %}
-
-    {% include blog.html %}
-
-    {% include footer.html %}
-</body>
-
+      function backToTop() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
+  </body>
 </html>

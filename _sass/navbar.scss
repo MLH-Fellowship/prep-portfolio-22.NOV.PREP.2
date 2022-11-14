@@ -53,26 +53,22 @@
     "Segoe UI Symbol";
 }
 
-.container{
-    margin-left: 5%;
-    margin-right: 5%;
-}
+
 
 /* Navbar section */
 
 .nav{
     width: 100%;
-    height: 65px;
-    // position: fixed;
-    line-height: 65px;
+    height: 5em;
+    // line-height: 65px;
     text-align: center;
     background-color: #133667;
 }
 
-.nav div.logo{
-    width: 180px;
-    height: 10px;
-    position: absolute;
+.logo{
+    width: 50px;
+    margin-bottom: 1em;
+    
 }
 
 .nav div.logo a{
@@ -109,10 +105,15 @@
     color: #fff;
     line-height: 65px;
     text-transform: uppercase;
+    font-weight: 500;
 }
 
 .nav div.main_list ul li a:hover{
-    color: #c0c0c0;
+    color: #133667;
+    background-color: #c0c0c0;
+    padding: 0.5em;
+    border-radius: 10em;
+    font-weight: 700;
 }
 
 .nav div.media_button {
