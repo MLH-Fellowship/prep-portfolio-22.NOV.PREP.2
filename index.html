@@ -5,18 +5,25 @@
 <html lang="en">
   {% include header.html %}
 
-  <body>
-    <div>
+  <body style="margin: 0; padding: 0;">
+    <div id="loader">
+        <div class="animation">
+            <img  src="https://media.giphy.com/media/WiIuC6fAOoXD2/giphy.gif" alt="">
+        </div>
+       
+
+    </div>
+
+    <div id="loader_wrapper">
       {% include navbar.html %} {% include description.html %} {% include
-      projects.html %} {% include leaderboard.html %} {% include blog.html %} {% include map.html %} 
-      
-      {% include footer.html %}
+      projects.html %} {% include leaderboard.html %} {% include blog.html %} {%
+      include map.html %} {% include footer.html %}
       <button
         type="button"
-        class="btn  btn-floating btn-lg"
+        class="btn btn-floating btn-lg"
         id="btn-back-to-top"
       >
-        <i  class="bx bx-up-arrow-circle bx-lg bx-tada"></i>
+        <i class="bx bx-up-arrow-circle bx-lg bx-tada"></i>
       </button>
     </div>
     <script>
@@ -44,6 +51,16 @@
       function backToTop() {
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
+      }
+
+    //   loader
+
+      window.onload = function (){
+        let loader = document.getElementById("loader");
+        let contents = document.getElementById("loader_wrapper")
+
+        loader.style.display = "none";
+        contents.style.display = "block";
       }
     </script>
   </body>
